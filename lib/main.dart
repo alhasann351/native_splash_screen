@@ -39,12 +39,23 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
         ),
       ),
-      body: const Center(
+      body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text(
-              'Native Splash Screen',
+            Container(
+              height: 150,
+              width: 200,
+              alignment: Alignment.center,
+              color: Colors.blue,
+              child: const Text(
+                'Native Splash Screen',
+                style: TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                ),
+              ),
             ),
           ],
         ),
